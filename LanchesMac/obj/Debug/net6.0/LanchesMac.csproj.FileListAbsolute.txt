@@ -247,3 +247,4 @@ C:\Users\Guilherme Batista\Documents\C#\ProjetosC#\LanchesMac\LanchesMac\bin\Deb
 C:\Users\Guilherme Batista\Documents\C#\ProjetosC#\LanchesMac\LanchesMac\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Guilherme Batista\Documents\C#\ProjetosC#\LanchesMac\LanchesMac\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Guilherme Batista\Documents\C#\ProjetosC#\LanchesMac\LanchesMac\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Guilherme Batista\Documents\C#\ProjetosC#\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.sourcelink.json

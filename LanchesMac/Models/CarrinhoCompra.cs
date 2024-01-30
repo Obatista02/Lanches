@@ -1,4 +1,5 @@
-﻿using LanchesMac.Context;
+﻿using LanchesMac.Components;
+using LanchesMac.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesMac.Models
@@ -86,12 +87,13 @@ namespace LanchesMac.Models
 
         public List<CarrionhoCompraItem> GetCarrionhoCompraItems()
         {
-            return CarrionhoCompraItems ?? 
-                (CarrionhoCompraItems = _context.CarrionhoCompraItens
-                .Where(c=> c.CarrinhoCompraId == CarrinhoCompraId)
-                .Include(s=>s.Lanche)
+            return CarrionhoCompraItems ?? (CarrionhoCompraItems = _context.CarrionhoCompraItens
+                .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
+                .Include(s => s.Lanche)
                 .ToList());
         }
+
+
         public void LimparCarrinho()
         {
             var carrinhoItens = _context.CarrionhoCompraItens
@@ -106,6 +108,11 @@ namespace LanchesMac.Models
                 .Select(c => c.Lanche.Preco * c.Quantidade).Sum();
             return total;
 
+        }
+
+        public static implicit operator CarrinhoCompra(CarrinhoCompraResumo v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

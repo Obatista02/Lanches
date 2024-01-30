@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2gPPAMHbGMUqE4or05LYoStQ/L5W/ejmU+jD4FfZAC8=",
+  "Hash": "1KMS/MtygrUa/gLP/0iuZyVoveA3EVQpwO3B/BYvp2A=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -150,12 +150,12 @@
       "OriginalItemSpec": "wwwroot\\images\\carousel13.jpg"
     },
     {
-      "Identity": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\carrinho.jpg",
+      "Identity": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\cart-5-16.ico",
       "SourceId": "LanchesMac",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\",
       "BasePath": "_content/LanchesMac",
-      "RelativePath": "images/carrinho.jpg",
+      "RelativePath": "images/cart-5-16.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,7 +166,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\carrinho.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\cart-5-16.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.ico",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/remove.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\remove.ico"
     },
     {
       "Identity": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\trash.png",

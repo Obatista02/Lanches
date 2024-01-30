@@ -25,8 +25,12 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
-      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\carrinho.jpg",
-      "PackagePath": "staticwebassets\\images\\carrinho.jpg"
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\cart-5-16.ico",
+      "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.ico",
+      "PackagePath": "staticwebassets\\images\\remove.ico"
     },
     {
       "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\trash.png",
