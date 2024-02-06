@@ -3,12 +3,13 @@
 <div class="container">
 <div class="row">
 
-    <img src="~/images/trash.png" />
-    <div>
-        <h4>Seu Carrinho de compras : </h4>
-    </div>
-<table>
-    <thead class="table table-bordered table_striped">
+
+        <div>
+            <img src="~/images/Full-Cart-icon.png" width="30" height="35" />
+            <h4>Seu Carrinho de compras : </h4>
+        </div>
+<table class="table table-bordered table-striped">
+    <thead>
         <tr>
                     <th>Quantidade</th>
                     <th>Lanche</th>
@@ -29,7 +30,7 @@
                         </td>
                         <td class="text-center">
                         <a asp-controller="CarrinhoCompra" asp-action="RemoverItemNoCarrinhoCompra"
-                           asp-route-lancheId="@item.Lanche.LancheId"><img src="~/images/trash.png" /></a>
+                               asp-route-lancheId="@item.Lanche.LancheId"><img src="~/images/delete.png" width="20px" height="20px" /></a>
                         </td>
                     </tr>
                 }

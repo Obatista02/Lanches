@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\Envelope-icon24.png",
+      "PackagePath": "staticwebassets\\images\\Envelope-icon24.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\Full-Cart-icon.png",
+      "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\Home-iconred.png",
+      "PackagePath": "staticwebassets\\images\\Home-iconred.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\adminarea.jpg",
+      "PackagePath": "staticwebassets\\images\\adminarea.jpg"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\carousel11.jpg",
       "PackagePath": "staticwebassets\\images\\carousel11.jpg"
     },
@@ -29,12 +45,36 @@
       "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
     },
     {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\delete.png",
+      "PackagePath": "staticwebassets\\images\\delete.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\faleconosco1.jpg",
+      "PackagePath": "staticwebassets\\images\\faleconosco1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\login-icons-png-4.png",
+      "PackagePath": "staticwebassets\\images\\login-icons-png-4.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\negado.png",
+      "PackagePath": "staticwebassets\\images\\negado.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\phone-app-icon.png",
+      "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
+    },
+    {
       "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.ico",
       "PackagePath": "staticwebassets\\images\\remove.ico"
     },
     {
       "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\trash.png",
       "PackagePath": "staticwebassets\\images\\trash.png"
+    },
+    {
+      "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\usuario-verificado.png",
+      "PackagePath": "staticwebassets\\images\\usuario-verificado.png"
     },
     {
       "Id": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\js\\site.js",

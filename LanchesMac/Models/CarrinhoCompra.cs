@@ -50,7 +50,7 @@ namespace LanchesMac.Models
                     Lanche = lanche,
                     Quantidade = 1
                 };
-                _context.CarrionhoCompraItens.Add( carrinhoCompraItem );
+                _context.CarrionhoCompraItens.Add(carrinhoCompraItem);
             }
             else
             {
@@ -87,8 +87,9 @@ namespace LanchesMac.Models
 
         public List<CarrionhoCompraItem> GetCarrionhoCompraItems()
         {
-            return CarrionhoCompraItems ?? (CarrionhoCompraItems = _context.CarrionhoCompraItens
-                .Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
+            return CarrionhoCompraItems ??
+                (CarrionhoCompraItems =
+                _context.CarrionhoCompraItens.Where(c => c.CarrinhoCompraId == CarrinhoCompraId)
                 .Include(s => s.Lanche)
                 .ToList());
         }
@@ -114,5 +115,10 @@ namespace LanchesMac.Models
         {
             throw new NotImplementedException();
         }
+
+        //public static implicit operator CarrinhoCompra(CarrinhoCompraResumo v)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
