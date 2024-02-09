@@ -6,11 +6,11 @@ namespace LanchesMac.ViewModel
     {
         [Required(ErrorMessage ="Informe o nome")]
         [Display(Name ="Usuario")]
-        public string UserName { get; set; }
+        public string? UserName { get; set; }
         [Required(ErrorMessage = "Informe a senha")]
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
-        public string PassWord { get; set; }
-        public string ReturnUrl { get; set; }
+        public string? PassWord { get; set; }
+        public string? ReturnUrl { get; set; }
     }
 }

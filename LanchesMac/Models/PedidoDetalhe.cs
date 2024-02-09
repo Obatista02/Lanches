@@ -10,7 +10,7 @@ namespace LanchesMac.Models
         public int Quantidade { get; set; }
         [Column(TypeName ="decimal(18,2)")]
         public decimal Preco { get; set; }
-        public virtual Lanche Lanche { get; set; }
-        public virtual Pedido Pedido { get; set; }
+        public virtual Lanche? Lanche { get; set; }
+        public virtual Pedido? Pedido { get; set; }
     }
 }

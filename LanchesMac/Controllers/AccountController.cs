@@ -1,4 +1,5 @@
 ﻿using LanchesMac.ViewModel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +17,7 @@ namespace LanchesMac.Controllers
             _signInManager = signInManager;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult Login(string returnUrl) 
         { 
@@ -25,6 +27,7 @@ namespace LanchesMac.Controllers
             });
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel loginVM)
         {
@@ -37,6 +40,7 @@ namespace LanchesMac.Controllers
             if(user != null)
             {
                 var result = await _signInManager.PasswordSignInAsync(user, loginVM.PassWord, false, false);
+
                 if(result.Succeeded)
                 {
                     if(string.IsNullOrEmpty(loginVM.ReturnUrl))

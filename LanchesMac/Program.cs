@@ -32,6 +32,8 @@ builder.Services.AddScoped<ISeedUserRoleInitial, SeedUserRoleInitial>();
 builder.Services.AddScoped<RelatorioVendasService>();
 
 builder.Services.AddScoped<GraficoVendasService>();
+
+
 builder.Services.Configure<ConfigurationImagens>(builder.Configuration.GetSection("ConfigurationPastaImagens"));
 
 builder.Services.AddAuthorization(options =>
@@ -39,6 +41,7 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Admin",
         politica =>
         {
+
             politica.RequireRole("Admin");
         });
 });
@@ -90,7 +93,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-
+CriarPerfisUsuarios(app);
 ////cria os perfis
 //seedUserRoleInitial.SeedRoles();
 ////cria os usuarios e atribui ao perfil
@@ -99,27 +102,22 @@ app.UseRouting();
 app.UseSession();
 
 app.UseAuthentication();
-
-
 app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
+    endpoints.MapControllerRoute(
+     name: "areas",
+     pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
 
     endpoints.MapControllerRoute(
-      name: "areas",
-      pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}"
-    );
-
-
-    endpoints.MapControllerRoute(
-        name: "categoriaFiltro",
-        pattern: "Lanche/{action}/{categoria?}",
-        defaults: new { Controller = "Lanche", action = "List" });
+       name: "categoriaFiltro",
+       pattern: "Lanche/{action}/{categoria?}",
+       defaults: new { Controller = "Lanche", action = "List" });
 
     endpoints.MapControllerRoute(
-     name: "default",
-     pattern: "{controller=Home}/{action=Index}/{id?}");
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
 });
 
 
@@ -128,11 +126,10 @@ app.Run();
 void CriarPerfisUsuarios(WebApplication app)
 {
     var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
-    using (var scope = scopedFactory.CreateScope())
+    using (var scope = scopedFactory?.CreateScope())
     {
-        var service = scope.ServiceProvider.GetService<ISeedUserRoleInitial>();
-        service.SeedRoles();
-        service.SeedUsers();
-        
+        var service = scope?.ServiceProvider.GetService<ISeedUserRoleInitial>();
+        service?.SeedRoles();
+        service?.SeedUsers();
     }
 }

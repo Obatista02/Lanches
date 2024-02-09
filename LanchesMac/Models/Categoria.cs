@@ -11,13 +11,13 @@ namespace LanchesMac.Models
         [StringLength(100, ErrorMessage ="Tamanho máximo é 100 caracteres")]
         [Required(ErrorMessage ="Informe o nome da categoria")]
         [Display(Name ="Nome")]
-        public String CategoriaNome { get; set; }
+        public String? CategoriaNome { get; set; }
 
         [StringLength(200, ErrorMessage = "Tamanho máximo é 200 caracteres")]
         [Required(ErrorMessage = "Informe a descrição da categoria")]
         [Display(Name = "Descrição")]
-        public String Descricao { get; set; }
+        public String? Descricao { get; set; }
 
-        public List<Lanche> Lanches { get; set; }
+        public List<Lanche>? Lanches { get; set; }
     }
 }

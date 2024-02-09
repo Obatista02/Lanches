@@ -2,6 +2,6 @@
 {
     public class ConfigurationImagens
     {
-        public string NomePastaImagensProdutos { get; set; }
+        public string? NomePastaImagensProdutos { get; set; }
     }
 }

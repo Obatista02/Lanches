@@ -1,5 +1,4 @@
-﻿using LanchesMac.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LanchesMac.Models
@@ -9,9 +8,12 @@ namespace LanchesMac.Models
     {
         [Key]
         public int CarrinhoCompraItemId { get; set; }
-        public Lanche Lanche { get; set; }
         public int Quantidade { get; set; }
+
         [StringLength(200)]
-        public string CarrinhoCompraId { get; set; }
+        public string? CarrinhoCompraId { get; set; }
+        public Lanche? Lanche { get; set; }
+        
+        
     }
 }

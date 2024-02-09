@@ -3,37 +3,42 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace LanchesMac.Areas.Admin.Controllers
-{       [Area("Admin")]
-        [Authorize(Roles = "Admin")]
-    public class AdminImagensController : Controller
+namespace LanchesMac.Areas.Admin.Controllers;
+[Area("Admin")]
+    [Authorize(Roles = "Admin")]
+public class AdminImagensController : Controller
+{
+    private readonly ConfigurationImagens _myConfig;
+    private readonly IWebHostEnvironment _hostingEnvironment;
+
+    public AdminImagensController(IWebHostEnvironment hostingEnvironment, IOptions<ConfigurationImagens>myConfiguration)
     {
-        private readonly ConfigurationImagens _myConfig;
-        private readonly IWebHostEnvironment _hostingEnvironment;
+        _hostingEnvironment = hostingEnvironment;
+        _myConfig = myConfiguration.Value;
+    }
 
-        public AdminImagensController(IWebHostEnvironment hostingEnvironment, IOptions<ConfigurationImagens>myConfiguration)
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    public async Task<IActionResult> UploadFiles(List<IFormFile> files)
+    {
+        if(files == null || files.Count == 0)
         {
-            _hostingEnvironment = hostingEnvironment;
-            _myConfig = myConfiguration.Value;
+            ViewData["Erro"] = "Error: Arquivo(s) não selecionado";
+            return View(ViewData);
+        }
+        if (files.Count == 5) 
+        {
+            ViewData["Erro"] = "Error: Quantidade de arquivos excedeu o limite";
+            return View(ViewData);
         }
 
-        public IActionResult Index()
+        try
         {
-            return View();
-        }
 
-        public async Task<IActionResult> UploadFiles(List<IFormFile> files)
-        {
-            if(files == null || files.Count == 0)
-            {
-                ViewData["Erro"] = "Error: Arquivo(s) não selecionado";
-                return View(ViewData);
-            }
-            if (files.Count == 5) 
-            {
-                ViewData["Erro"] = "Error: Quantidade de arquivos excedeu o limite";
-                return View(ViewData);
-            }
+
             long size = files.Sum(f => f.Length);
 
             var filePathsName = new List<string>();
@@ -62,11 +67,21 @@ namespace LanchesMac.Areas.Admin.Controllers
             ViewBag.arquivos = filePathsName;
 
             return View(ViewData);
-        }
-
-        public IActionResult GetImagens()
+        }catch (Exception ex)
         {
-            FileManagerModel model = new FileManagerModel();
+            ViewData["Erro"] = $"Erro : {ex.Message}";
+            return View(ViewData);
+        }
+    }
+
+    public IActionResult GetImagens()
+    {
+        FileManagerModel model = new FileManagerModel();
+
+        try
+        {
+
+
 
             var userImagesPath = Path.Combine(_hostingEnvironment.WebRootPath,
                 _myConfig.NomePastaImagensProdutos);
@@ -83,21 +98,32 @@ namespace LanchesMac.Areas.Admin.Controllers
             }
 
             model.Files = files;
-            return View(model);
         }
-
-        public IActionResult Deletefile(string fname)
+        catch (Exception ex)
         {
-            string _imagemDeleta = Path.Combine(_hostingEnvironment.WebRootPath,
-                _myConfig.NomePastaImagensProdutos + "\\", fname);
+            ViewData["Erro"] = $"Erro : {ex.Message}";
 
-            if ((System.IO.File.Exists(_imagemDeleta)))
-            {
-                System.IO.File.Delete(_imagemDeleta);
+            
+        }return View(model);
+    }
 
-                ViewData["Deletado"] = $"Arquivo(s) {_imagemDeleta} deletado com sucesso";
-            }
-            return View("index");
+    public IActionResult Deletefile(string fname)
+    {
+        try { 
+        string _imagemDeleta = Path.Combine(_hostingEnvironment.WebRootPath,
+            _myConfig.NomePastaImagensProdutos + "\\", fname);
+
+        if ((System.IO.File.Exists(_imagemDeleta)))
+        {
+            System.IO.File.Delete(_imagemDeleta);
+
+            ViewData["Deletado"] = $"Arquivo(s) {_imagemDeleta} deletado com sucesso";
         }
+        }
+        catch (Exception ex)
+        {
+            ViewData["Erro"] = $"Erro : {ex.Message}";
+        }
+        return View("index");
     }
 }
