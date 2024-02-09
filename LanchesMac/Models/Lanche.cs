@@ -39,7 +39,7 @@ namespace LanchesMac.Models
         public bool IsLanchePreferido { get; set; }
         [Display(Name = "estoque")]
         public bool EmEstoque { get; set; }
-
+        [Display(Name = "Categoria")]
         public int CategoriaId { get; set; }
         public virtual Categoria Categoria { get; set; }
 

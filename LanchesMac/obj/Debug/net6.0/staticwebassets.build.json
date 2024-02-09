@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tjiBSS6bU7NV+R6gW5lLYrtoSNvb164mjPpbEQ1PVCc=",
+  "Hash": "A/GjP9lQNCMXOcPZhKBLM3qsJPCDB5CWBbBUk9DBGQo=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -338,6 +338,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\phone-app-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\Produtos\\luffyZoro.jpg",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/Produtos/luffyZoro.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Produtos\\luffyZoro.jpg"
     },
     {
       "Identity": "C:\\Users\\Guilherme Batista\\Documents\\C#\\ProjetosC#\\LanchesMac\\LanchesMac\\wwwroot\\images\\remove.ico",

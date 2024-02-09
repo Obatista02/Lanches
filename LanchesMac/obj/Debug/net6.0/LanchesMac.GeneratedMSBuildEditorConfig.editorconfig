@@ -14,7 +14,7 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Guilherme Batista\Documents\C#\ProjetosC#\LanchesMac\LanchesMac
 build_property._RazorSourceGeneratorDebug = 
 
@@ -36,6 +36,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminCategorias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5DYXRlZ29yaWFzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminGrafico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5HcmFmaWNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminGrafico/VendasMensal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5HcmFmaWNvXFZlbmRhc01lbnNhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminGrafico/VendasSemanal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5HcmFmaWNvXFZlbmRhc1NlbWFuYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminImagens/GetImagens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5JbWFnZW5zXEdldEltYWdlbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminImagens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5JbWFnZW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminImagens/UploadFiles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5JbWFnZW5zXFVwbG9hZEZpbGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminLanches/Create.cshtml]
@@ -76,6 +100,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminPedidos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QZWRpZG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminPedidos/PedidoLanches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QZWRpZG9zXFBlZGlkb0xhbmNoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminPedidos/PedidoNotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5QZWRpZG9zXFBlZGlkb05vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminRelatorioVendas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5SZWxhdG9yaW9WZW5kYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/AdminRelatorioVendas/RelatorioVendasSimples.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5SZWxhdG9yaW9WZW5kYXNcUmVsYXRvcmlvVmVuZGFzU2ltcGxlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Guilherme Batista/Documents/C\#/ProjetosC\#/LanchesMac/LanchesMac/Areas/Admin/Views/Admin/Index.cshtml]
